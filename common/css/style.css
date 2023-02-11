@@ -1,5 +1,4 @@
 /* html {scroll-behavior: smooth;} */
-
 .wrap {
     background: #000;
     color: #fff;
@@ -92,7 +91,6 @@
     transform-origin: 50% 50%;
     margin: 50px 30px 0 0;
 }
-
 @keyframes rotate {
 	100% {
     	transform: rotate(360deg);
@@ -150,6 +148,7 @@ p.hash {
 }
 
 
+
 .skill_wrap > div {
     display: flex;
     padding-bottom: 4em;
@@ -192,22 +191,18 @@ p.hash {
     padding-top:  20px;
     color: #de4f97;
 }
-
 .project_wrap h4 {
     font-size: 2.4rem;
     font-weight: 600;
     transition: all 1s;
 }
-
 .project_wrap .rough:hover h4 {
     color: #de4f97;
     transition: all 1s;
 }
-
 .project_wrap .right {
     display: flex;
 }
-
 .project_wrap .rough:hover .arrow::before {
     width: 100%;
     height: 100%;
@@ -224,6 +219,8 @@ p.hash {
     transform: rotate(45deg);
     transition: all 1s;
 }
+
+
 
 .arrow {
     width: 32px;
@@ -257,11 +254,6 @@ p.hash {
 
 
 
-
-
-
-
-
 .banner {
     background: #de4f97;
     color: #000;
@@ -271,10 +263,9 @@ p.hash {
     white-space: nowrap;
     overflow: hidden;
 }
-
-
 .project .tit h2 {font-size: 4rem; position: relative;}
 .project .tit p {font-size: 1rem; padding: 50px 0 100px;}
+
 
 
 .react {
@@ -295,15 +286,6 @@ p.hash {
     border-radius: 50px;
     padding: 2px 20px;
 }
-
-
-
-
-
-
-
-
-
 
 .img_cont {
     position: relative;
@@ -354,8 +336,6 @@ p.hash {
     top: 0;
 }
 
-
-
 .img_cont a:nth-of-type(1) { width: 546px; height: auto;}
 .img_cont a:nth-of-type(1) .img { width: 100%; }
 
@@ -391,6 +371,11 @@ p.hash {
 
 
 
+
+
+
+
+
 .footer {
     text-align: center;
     overflow-x: hidden;
@@ -416,6 +401,7 @@ p.hash {
     color: #de4f97;
 }
 
+
 @keyframes textLoop {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -429,171 +415,12 @@ p.hash {
 
 .scroll-top {
     background: transparent;
+    border: none;
     color: #de4f97;
     font-size: 1.4rem;
     margin-top: 5em;
     padding: 20px;
 }
-
-
-@media (max-width: 1450px){
-    .container {
-        width: 100%;
-        padding: 5rem 5rem;
-    }
-    .top_nav ul {
-        padding: 0 4rem;
-    }
-    .intro .txt {
-        width: 100%;
-        padding: 0 4rem;
-    }
-    .intro .txt p {
-        font-size: 6rem;
-    }
-    .intro01 img {
-        width: 140px;
-        margin-left: 10px;
-    }
-    .intro02 img {
-        width: 140px;
-        padding-left: 10px;
-    }
-    .intro03 img {
-        width: 140px;
-        margin-right: 10px;
-    }
-    .intro04 img {
-        width: 200px;
-        position: absolute; bottom: 0; right: 4rem;
-    }
-    .first {
-        position: relative;
-        padding-left: 150px;
-    }
-    .circle-svg {
-        width: 130px;
-        height: 130px;
-        margin:  0;
-        top: 30px;
-    }
-    .skill {
-        padding: 0;
-    }
-    .skill_wrap > div {
-        display: block;
-    }
-    .skill_wrap > div h4 {
-        padding-bottom: 1em;
-    }
-
-    .project .tit h2 {
-        font-size: 2rem;
-    }
-    .project .tit p {
-        padding: 20px 0;
-    }
-    .project_wrap .pj {
-        padding: 4rem 2rem;
-    }
-    .project_wrap h4 {
-        font-size: 2rem;
-    }
-    .project_wrap .details {
-        padding: 20px 0 0 0;
-    }
-
-    .react .tit h2 {
-        font-size: 2.5rem;
-    }
-    .img_cont a {
-        font-size: 2.5rem;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    /* 타블렛 가로 */
-    .intro {
-        height: 100vh;
-    }
-    .intro .txt p {
-        font-size: 5rem;
-    }
-}
-
-@media screen and (max-width: 899px) {
-    /* 모바일 가로, 타블렛 세로 */
-    .container {
-        width: 100%;
-        padding: 4rem 4rem;
-    }
-    .intro {
-        height: 50vh;
-    }
-    .intro .txt p {
-        font-size: 4rem;
-        padding-top: 0;
-    }
-    .intro01 img {
-        width: 100px;
-    }
-    .intro02 img {
-        width: 100px;
-    }
-    .intro03 img {
-        width: 100px;
-    }
-    .intro04 img {
-        width: 150px;
-        position: absolute; bottom: 0; right: 4rem;
-    }
-}
-    
-@media screen and (max-width: 599px) {
-    /* 모바일 세로 */
-    p {
-        font-size: .8rem;
-    }
-    .container {
-        width: 100%;
-        padding: 2rem 1.4rem;
-    }
-    .intro {
-        height: 50vh;
-    }
-    .intro .txt {
-        padding: 0 1.4rem;
-    }
-    .intro .txt p {
-        font-size: 2.4rem;
-        padding-top: 0;
-    }
-    .intro01 img {
-        display: none;
-    }
-    .intro02 img {
-        width: 70px;
-    }
-    .intro03 img {
-        width: 70px;
-    }
-    .intro04 img {
-        display: none;
-    }
-
-    .text {
-        font-size: 1.2rem;
-    }
-
-    .skill_wrap > div h4 {
-        padding-bottom: 0.4rem;
-    }
-    .skill_wrap ul li, .typing_wrap p {
-        font-size: .8rem;
-        line-height: 1.4rem;
-    }
-}
-
 
 
 
@@ -630,3 +457,5 @@ html {cursor: none;}
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-thumb {background: #de4f97; border-radius: 10px;}
 ::-webkit-scrollbar-track {background: #000;}
+
+

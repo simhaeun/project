@@ -1,57 +1,207 @@
-body {
-    height: 100vh; 
-    overflow: hidden;
-    font-weight: 700;
+@media (max-width: 1450px){
+    .container {
+        width: 100%;
+        padding: 5rem 5rem;
+    }
+    .top_nav ul {
+        padding: 0 4rem;
+    }
+    .intro .txt {
+        width: 100%;
+        padding: 0 4rem;
+    }
+    .intro .txt p {
+        font-size: 6rem;
+    }
+    .intro01 img {
+        width: 140px;
+        margin-left: 10px;
+    }
+    .intro02 img {
+        width: 140px;
+        padding-left: 10px;
+    }
+    .intro03 img {
+        width: 140px;
+        margin-right: 10px;
+    }
+    .intro04 img {
+        width: 200px;
+        position: absolute; bottom: 0; right: 4rem;
+    }
+    .first {
+        position: relative;
+        padding-left: 150px;
+    }
+    .circle-svg {
+        width: 130px;
+        height: 130px;
+        margin:  0;
+        top: 30px;
+    }
+    .skill {
+        padding: 0;
+    }
+    .skill_wrap > div {
+        display: block;
+    }
+    .skill_wrap > div h4 {
+        padding-bottom: 1em;
+    }
+
+    .project .tit h2 {
+        font-size: 2rem;
+    }
+    .project .tit p {
+        padding: 20px 0;
+    }
+    .project_wrap .pj {
+        padding: 4rem 2rem;
+    }
+    .project_wrap h4 {
+        font-size: 2rem;
+    }
+    .project_wrap .details {
+        padding: 20px 0 0 0;
+    }
+
+    .react .tit h2 {
+        font-size: 2.5rem;
+    }
+    .img_cont {
+        grid-column-gap: 80px;
+    }
+    .img_cont a {width: 400px; margin: 0; font-size: 2.5rem;}
 }
 
-#scrollbar {height: 100vh; background: #eee;}
-
-.scrollbar-track-x {
-    height: 1px!important;
-    bottom: 40px!important;
-    margin: 0 auto!important;
-    left: 0!important;
-    right: 0!important;
-    background: rgba(0, 0, 0, .06)!important;
-}
-.scrollbar-thumb {
-    height: 3px;
-    top: -1px;
-    background: rgba(0, 0, 0, .1);
-}
-
-.container {display: flex; position: relative; z-index: 1; counter-reset: item; height: 100vh;}
-
-nav {position: fixed; top: 0; right: 0; z-index: 999;}
-nav ul {font-size: 0; background: #eee;}
-nav ul li {
-    display: inline-block; padding: 0 15px; height: 100vh;
-    font-size: 26px; font-weight: 600; padding-top: 40px; border-left: 1px solid #888;
-    writing-mode: vertical-rl; text-orientation: upright;
+@media screen and (max-width: 1199px) {
+    /* 타블렛 가로 */
+    .intro {
+        height: 50vh;
+    }
+    .intro .txt p {
+        font-size: 5rem;
+    }
+    .react .tit {padding-bottom: 0;}
+    .img_cont {width: 100%; display: block;}
+    .img_cont a {width: 346px; margin: 0; font-size: 2rem;}
+    .img_cont .box {margin-top: 50px;}
+    .img_cont .box .img img {margin-bottom: 1rem;}
 }
 
-
-
-
-.item {
-    position: relative; padding: 150px 80px; height: 100vh;
-    display: flex; flex: 0 0 700px;
-    line-height: 1.7; user-select: none; 
-    border-right: 1px solid rgba(0, 0, 0, .06);
-    align-items: center;
+@media screen and (max-width: 899px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .container {
+        width: 100%;
+        padding: 4rem 4rem;
+    }
+    .intro {
+        height: 50vh;
+    }
+    .intro .txt p {
+        font-size: 4rem;
+        padding-top: 0;
+    }
+    .intro01 img {
+        width: 100px;
+    }
+    .intro02 img {
+        width: 100px;
+    }
+    .intro03 img {
+        width: 100px;
+    }
+    .intro04 img {
+        width: 150px;
+        position: absolute; bottom: 0; right: 4rem;
+    }
 }
-.item img {width: 80%;}
-.item:before {
-    counter-increment: item;
-    content: counter(item);
-    font-size: 100px;
-    opacity: .13;
-    font-weight: bold;
-    position: absolute;
-    z-index: -1;
-    transform: translate(-30px, -50px);
-    line-height: 1;
+    
+@media screen and (max-width: 599px) {
+    /* 모바일 */
+    .top_nav {display: none;}
+    p, li {
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+    .project_wrap h4 {
+        font-size: 1.8rem;
+    }
+    .container {
+        width: 100%;
+        padding: 2rem 1.4rem;
+    }
+    .intro {
+        height: 40vh;
+    }
+    .intro .txt {
+        padding: 0 1.4rem;
+    }
+    .intro .txt p {
+        font-size: 2.4rem;
+        padding-top: 0;
+    }
+    .intro01 img {
+        display: none;
+    }
+    .intro02 img {
+        width: 70px;
+    }
+    .intro03 img {
+        width: 70px;
+    }
+    .intro04 img {
+        display: none;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .skill_wrap > div h4 {
+        padding-bottom: 0.4rem;
+    }
+    .skill_wrap ul li, .typing_wrap p {
+        font-size: .8rem;
+        line-height: 1.4rem;
+    }
+    .first {
+        padding-left: 70px;
+    }
+    .circle-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        animation: rotate 10s linear infinite;
+        transform-origin: 50% 50%;
+        margin: 0px 10px 0 0;
+    }
+    .arrow {
+        width: 22px;
+        height: 22px;
+        position: relative;
+    }
+    .arrow::after {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        transform-origin: 0 100%;
+        transform: rotate(45deg);
+        transition: all 1s;
+    }
+    .react .tit h2 {
+        font-size: 1.5rem;
+    }
+    .react .tit h2 span {
+        padding: 2px 10px;
+    }
+    .flow_container {
+        padding: 20px 0;
+    }
+    .flow-wrap {
+        font-size: 2rem;
+    }
+
 }
-.item:nth-child(2n+2) {align-items: flex-start;}
-.item:nth-child(4n+4) {align-items: flex-end;}
-.item:last-child {opacity: 0;}
